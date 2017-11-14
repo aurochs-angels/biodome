@@ -4,7 +4,8 @@
 
 class gpioInit {
 public:
-  gpioInit();
+  gpioInit(std::string test = "4");
+
   gpioInit(std::string &&pin);
   ~gpioInit();
 

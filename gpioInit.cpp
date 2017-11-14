@@ -1,8 +1,8 @@
 #include "gpioInit.h"
-gpioInit::gpioInit() : gpioID{"4"} {
+gpioInit::gpioInit(std::string test) : gpioID(test) {
   // Export pin
 }
-gpioInit::gpioInit(std::string &&pin) : gpioID{pin} { // export pin
+gpioInit::gpioInit(std::string &&pin) : gpioID(std::move(pin)) { // export pin
   std::ofstream gpio_add(export_directory, std::ofstream::app);
   if (gpio_add.is_open()) {
     // write the gpioPin number to the export file.
