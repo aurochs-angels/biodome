@@ -1,5 +1,3 @@
 #include "gpioInit.h"
-int main() {
-  gpioInit one = gpioInit();
-  gpioInit two = gpioInit("6");
-}
+#include "honeywell.h"
+int main() {}
