@@ -1,5 +1,6 @@
 #include "gpioInit.h"
 int main() {
+  std::string seven = "7";
   gpioInit one = gpioInit();
-  gpioInit two = gpioInit("6");
+  gpioInit two = gpioInit("seven");
 }
