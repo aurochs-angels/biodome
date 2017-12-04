@@ -57,7 +57,7 @@ int main() {
         for (int j = 0; j < 8; j++) {
           temp_bits[j] = bits_2[j];
         }
-        for (int k = 0; k < 7; k++) {
+        for (int k = 0; k < 6; k++) {
           temp_bits[8 + k] = bits_3[k];
         }
         temperature = buffer_to_double(temp_bits);
@@ -72,7 +72,7 @@ int main() {
     }
   }
 }
-double buffer_to_int(unsigned int buff[14]) {
+double buffer_to_double(unsigned int buff[14]) {
   double result = 0;
   for (int i = 0; i < 14; i++) {
     if (buff[i] == 1) {
